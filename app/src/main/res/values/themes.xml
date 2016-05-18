@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Theme.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	    <item name="colorPrimary">@color/colorPrimary</item>
+	    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+	    <item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+
+	<style name="MyEditTextTheme" parent="ThemeOverlay.AppCompat.Dark">
+		<item name="colorControlNormal">@android:color/white</item>
+		<item name="colorControlActivated">@android:color/white</item>
+		<item name="colorControlHighlight">@android:color/white</item>
+	</style>
+
+
+</resources>

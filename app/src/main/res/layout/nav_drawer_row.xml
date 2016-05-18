@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:clickable="true"
+    android:background="?android:selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:foregroundTint="@color/input_login"/>
+
+
+    <TextView
+        android:id="@+id/nav_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/input_login"
+        />
+
+</LinearLayout>

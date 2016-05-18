@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.theunifyproject.lethalskillzz" >
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Notification Permissions -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="net.theunifyproject.lethalskillzz.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="net.theunifyproject.lethalskillzz.permission.C2D_MESSAGE" />
+
+    <!-- Phone contact Permissions -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- For using the phone calls -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- For reading phone call state -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Storage Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Define your own permission to protect payment broadcast -->
+    <permission android:name="net.theunifyproject.lethalskillzz.PAYMENT_BROADCAST_PERMISSION"
+        android:label="Read payment status"
+        android:protectionLevel="signature" />
+    <!-- "signature" permission granted automatically by system, without notifying user. -->
+    <uses-permission android:name="net.theunifyproject.lethalskillzz.PAYMENT_BROADCAST_PERMISSION" />
+
+
+
+    <application
+        android:name="net.theunifyproject.lethalskillzz.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+
+        <!-- Declare these objects, this is part of Fortumo SDK, and should not be called directly -->
+        <receiver android:name="mp.MpSMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="mp.MpService" />
+        <service android:name="mp.StatusUpdateService" />
+        <activity android:name="mp.MpActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- Implement you own BroadcastReceiver to track payment status,
+  should be protected by "signature" permission -->
+        <receiver android:name="net.theunifyproject.lethalskillzz.receiver.PaymentStatusReceiver"
+            android:permission="net.theunifyproject.lethalskillzz.PAYMENT_BROADCAST_PERMISSION">
+            <intent-filter>
+                <action android:name="mp.info.PAYMENT_STATUS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent service -->
+        <service
+            android:name="net.theunifyproject.lethalskillzz.service.HttpService"
+            android:exported="false" />
+        <service
+            android:name="net.theunifyproject.lethalskillzz.service.GcmRegistrationService"
+            android:exported="false" />
+        <service
+            android:name="net.theunifyproject.lethalskillzz.service.GcmInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="net.theunifyproject.lethalskillzz.service.GcmMessageHandler"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.codepath.gcmquickstart" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.OTPActivity"
+            android:label="@string/title_activity_otp" >
+        </activity>
+
+        <!-- SMS Receiver -->
+        <receiver android:name="net.theunifyproject.lethalskillzz.receiver.SmsReceiver" >
+            <intent-filter android:priority="99999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.RegisterProfileActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="mention" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.UserListActivity"
+            android:label="@string/title_activity_user_list" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.DisplayFeedActivity"
+            android:label="@string/title_activity_feed" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.PostFeedActivity"
+            android:label="@string/title_activity_post_feed" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.RegisterAccountActivity"
+            android:label="@string/title_activity_confirmation" >
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.CommentActivity"
+            android:label="@string/title_activity_comment" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.HashActivity"
+            android:label="@string/title_activity_hash" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="hash" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.RepositoryActivity"
+            android:label="@string/title_activity_repository" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.ShoppingActivity"
+            android:label="@string/title_activity_shopping" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.DigestActivity"
+            android:label="@string/title_activity_digest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.TransitActivity"
+            android:label="@string/title_activity_transit" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PDFActivity"
+            android:label="@string/title_activity_web" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.DisplayShopActivity"
+            android:label="@string/title_activity_display_shop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.PostShopActivity"
+            android:label="@string/title_activity_post_shopping" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.IntroDiscoverActivity"
+            android:label="@string/title_activity_intro_discover" >
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.ProfilePicActivity"
+            android:label="@string/title_activity_profile_pic" >
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.EditAccountActivity"
+            android:label="@string/title_activity_edit_account" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.ReportUserActivity"
+            android:label="@string/title_activity_report_user" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.NotificationSettingActivity"
+            android:label="@string/title_activity_notification_setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.SearchContactActivity"
+            android:label="@string/title_activity_search_contact" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.ChangeNumberActivity"
+            android:label="@string/title_activity_change_number" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.StoreActivity"
+            android:label="@string/title_activity_store" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.EditShopActivity"
+            android:label="@string/title_activity_edit_shop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.PostTransitActivity"
+            android:label="@string/title_activity_post_transit" >
+            android:label="@string/title_activity_edit_shop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.TaxiActivity"
+            android:label="@string/title_activity_taxi" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.StoreSettingActivity"
+            android:label="@string/title_activity_store_setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.theunifyproject.lethalskillzz.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="net.theunifyproject.lethalskillzz.activity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_about"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+    </application>
+
+</manifest>

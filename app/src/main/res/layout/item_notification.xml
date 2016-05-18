@@ -1,0 +1,63 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    android:background="@color/feed_item_bg"
+    card_view:cardCornerRadius="8dp"
+    android:layout_marginBottom="2dp">
+
+
+<LinearLayout
+        android:id="@+id/notify_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/notify_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/timestamp"
+            android:textSize="@dimen/feed_item_timestamp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <net.android.volley.toolbox.RoundNetworkImageView
+                android:id="@+id/notify_profilePic"
+                android:layout_width="@dimen/feed_item_profile_pic"
+                android:layout_height="@dimen/feed_item_profile_pic"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+            <TextView
+                android:id="@+id/notify_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+ </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirmCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+
+
+    <net.theunifyproject.lethalskillzz.widget.MyViewPager
+        android:id="@+id/viewPagerVertical2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:id="@+id/layout_confirmation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyEditTextTheme"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_confirm_username"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_reg_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="25dp">
+
+                <EditText
+                    android:id="@+id/input_reg_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_username"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="16"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/input_register_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/input_reg_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="12"
+                    android:textColorHint="@color/input_register_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_reg_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/input_reg_confirm_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_confirm_password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="12"
+                    android:textColorHint="@color/input_register_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/btnConfirmNext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_next"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnConfirmLinkToLoginScreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@null"
+                android:text="@string/btn_link_to_login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_confirmation2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:theme="@style/MyEditTextTheme"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_confirm_mobile"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_reg_mobile"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_reg_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:hint="@string/hint_mobile"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:maxLength="11"
+                    android:textColorHint="@color/input_register_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/btnConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_submit"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnConfirmLinkToLoginScreen2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@null"
+                android:text="@string/btn_link_to_login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </net.theunifyproject.lethalskillzz.widget.MyViewPager>
+
+
+    <ProgressBar
+        android:id="@+id/confirmProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+
+</android.support.design.widget.CoordinatorLayout>

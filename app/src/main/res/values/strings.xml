@@ -1,0 +1,362 @@
+<resources>
+    <string name="app_name">TUP</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_settings">Settings</string>
+    <string name="nav_item_contacts">Contacts</string>
+    <string name="nav_item_logout">Logout</string>
+
+    <string name="hint_name">Full name</string>
+    <string name="hint_store_name">Store name</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_username_or_mobile">Username or Mobile</string>
+    <string name="hint_new_mobile">New number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_new_password">New password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_price">Price</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_register">SIGN UP</string>
+    <string name="btn_next">NEXT</string>
+    <string name="btn_sign_up">LOGIN</string>
+    <string name="btn_recover_password">RECOVER PASSWORD</string>
+    <string name="btn_link_to_register">Not registered? Sign up now.</string>
+    <string name="btn_link_resend_code">Didn\'t receive Code? Resend.</string>
+    <string name="btn_link_to_login">Already registered? Login.</string>
+    <string name="btn_link_forgot_password">Forgot password?</string>
+    <string name="rad_btn_male">Male</string>
+    <string name="rad_btn_female">Female</string>
+    <string name="err_msg_name">Invalid name</string>
+    <string name="err_msg_username">Invalid username</string>
+    <string name="err_msg_username_mobile">Invalid username/mobile</string>
+    <string name="err_msg_username_taken">Username already taken</string>
+    <string name="err_msg_mobile">Invalid phone number</string>
+    <string name="err_msg_mobile_taken">Phone number already taken</string>
+    <string name="err_msg_password">Invalid password</string>
+    <string name="err_msg_password_length">Password must be up to 6 characters long</string>
+    <string name="err_msg_confirm">Password doesn\'t match</string>
+    <string name="err_msg_input">Invalid input.</string>
+    <string name="err_msg_otp">Wrong code</string>
+    <string name="err_no_internet">Error! No internet connection.</string>
+    <string name="err_network_timeout">Error! Network timeout.</string>
+    <string name="hint_post_feed">Whats up!</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_follow">Follow</string>
+    <string name="btn_unfollow">Following</string>
+    <string name="btn_followers">Followers</string>
+    <string name="btn_following">Following</string>
+    <string name="btn_like">Likes</string>
+    <string name="btn_comment">Comments</string>
+    <string name="btn_done">DONE</string>
+    <string name="btn_submit">SUBMIT</string>
+
+    <string name="splash_url">www.theunifyproject.info</string>
+    <string name="msg_confirm_username">Choose a username</string>
+    <string name="msg_confirm_mobile">Your valid mobile number</string>
+    <string name="msg_please_wait">Please wait! while we verify your mobile number.</string>
+    <string name="msg_manual_otp">You should receive a confirmation SMS with a 6-digit verification code shortly.</string>
+    <string name="lbl_enter_otp">Enter Code</string>
+    <string name="msg_follow_5_users">Select at least five users to follow</string>
+    <string name="shop_policy">I have read and accepted the terms and conditions of unify project</string>
+    <string name="lbl_submit">SUBMIT</string>
+
+    <string name="gender_prompt">Gender</string>
+    <string name="location_prompt">State of origin</string>
+    <string name="course_prompt">Course</string>
+    <string name="level_prompt">Level</string>
+    <string name="category_prompt">Category</string>
+    <string name="condition_prompt">Condition</string>
+    <string name="bosso_prompt">Bosso - Gidan Kwano</string>
+    <string name="gidan_kwano_prompt">Gidan Kwano - Bosso</string>
+    <string name="means_prompt">Means</string>
+    <string name="time_prompt">Time</string>
+    <string name="campus_prompt">Campus</string>
+
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>Phone contacts</item>
+        <item>Settings</item>
+        <item>Profile</item>
+        <item>Account</item>
+        <item>Store</item>
+        <item>Notification</item>
+        <item>Help</item>
+        <item>About</item>
+        <item>FAQ</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="edit_account_labels">
+        <item>Privacy</item>
+        <item>Change phone number</item>
+        <item>Change password</item>
+    </string-array>
+
+    <!-- Notification settings item labels  -->
+    <string-array name="notification_setting_labels">
+        <item>Show prompt</item>
+        <item>Sound</item>
+        <item>Vibrate</item>
+    </string-array>
+
+    <string-array name="condition_array">
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+
+    <!-- shopping item labels  -->
+    <string-array name="shopping_array">
+        <item>All</item>
+        <item>Electronics &amp; Gadgets</item>
+        <item>Beauty &amp; Fashion</item>
+        <item>Sports &amp; Outdoors</item>
+        <item>Books &amp; Literature</item>
+        <item>Tools &amp; Equipments</item>
+        <item>Food &amp; Provisions</item>
+        <item>Home &amp; Furniture</item>
+        <item>Job &amp; Services</item>
+        <item>Vehicles</item>
+        <item>Real Estate</item>
+    </string-array>
+
+    <!-- post shopping item labels  -->
+    <string-array name="post_shopping_array">
+        <item>Electronics &amp; Gadgets</item>
+        <item>Beauty &amp; Fashion</item>
+        <item>Fitness &amp; Sports</item>
+        <item>Books &amp; Literature</item>
+        <item>Tools &amp; Equipments</item>
+        <item>Food &amp; Provisions</item>
+        <item>Home &amp; Furniture</item>
+        <item>Job &amp; Services</item>
+        <item>Vehicles</item>
+        <item>Real Estate</item>
+    </string-array>
+
+    <!-- post shopping item labels  -->
+    <string-array name="transit_means_array">
+        <item>None</item>
+        <item>School Bus</item>
+        <item>Taxi</item>
+    </string-array>
+
+    <!--  transit time array -->
+    <string-array name="transit_time_array">
+        <item>None</item>
+        <item>06:00 - 07:00</item>
+        <item>07:00 - 08:00</item>
+        <item>08:00 - 09:00</item>
+        <item>09:00 - 10:00</item>
+        <item>10:00 - 11:00</item>
+        <item>11:00 - 12:00</item>
+        <item>12:00 - 01:00</item>
+        <item>01:00 - 02:00</item>
+        <item>02:00 - 03:00</item>
+        <item>03:00 - 04:00</item>
+        <item>04:00 - 05:00</item>
+        <item>05:00 - 06:00</item>
+    </string-array>
+
+    <!--  taxi time array -->
+    <string-array name="taxi_time_array">
+        <item>06:00 - 07:00</item>
+        <item>07:00 - 08:00</item>
+        <item>08:00 - 09:00</item>
+        <item>09:00 - 10:00</item>
+        <item>10:00 - 11:00</item>
+        <item>11:00 - 12:00</item>
+        <item>12:00 - 01:00</item>
+        <item>01:00 - 02:00</item>
+        <item>02:00 - 03:00</item>
+        <item>03:00 - 04:00</item>
+        <item>04:00 - 05:00</item>
+        <item>05:00 - 06:00</item>
+    </string-array>
+
+    <!-- campus array  -->
+    <string-array name="campus_array">
+        <item>Bosso</item>
+        <item>Gidan Kwano</item>
+    </string-array>
+
+
+    <!-- custom spinner item labels  -->
+    <string-array name="digest_array">
+        <item>All</item>
+        <item>News</item>
+        <item>Business</item>
+        <item>Sports</item>
+        <item>Story</item>
+        <item>Tech</item>
+        <item>Gossip</item>
+        <item>Entertainment</item>
+    </string-array>
+
+
+
+    <string-array name="level_array">
+        <item>100L</item>
+        <item>200L</item>
+        <item>300L</item>
+        <item>400L</item>
+        <item>500L</item>
+        <item>ALUMNI</item>
+    </string-array>
+
+
+    <string-array name="repo_level_array">
+        <item>100L</item>
+        <item>200L</item>
+        <item>300L</item>
+        <item>400L</item>
+        <item>500L</item>
+    </string-array>
+
+    <string-array name="faculty_array">
+        <item>SAAT</item>
+        <item>SEET</item>
+        <item>SEMT</item>
+        <item>SET</item>
+        <item>SITC</item>
+        <item>SLS</item>
+        <item>SPS</item>
+        <item>SSTE</item>
+    </string-array>
+
+    <string-array name="course_array">
+        <item>Agricultural Economics and Extension Technology</item>
+        <item>Animal Production</item>
+        <item>Food Science and Nutrition</item>
+        <item>Crop Production</item>
+        <item>Soil Science</item>
+        <item>Water Resources,Aquaculture &amp; Fishries Technology</item>
+        <item>Agricultural &amp; BioResources Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Electronics Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Mechatronics Engineering</item>
+        <item>Telecommunication Engineering</item>
+        <item>Architecture</item>
+        <item>Building</item>
+        <item>Estate Management</item>
+        <item>Quantity Survey</item>
+        <item>Surveying and GeoInformatics</item>
+        <item>Urban &amp; Regional Planing</item>
+        <item>Entrepreneurship &amp; Business Technology</item>
+        <item>Transport Management</item>
+        <item>Project Management</item>
+        <item>Computer Science</item>
+        <item>Cyber Security</item>
+        <item>Information &amp; Media Technology</item>
+        <item>Biochemistry</item>
+        <item>Biological Science</item>
+        <item>Chemistry</item>
+        <item>Geography</item>
+        <item>Geology</item>
+        <item>Industrial &amp; Technology Education</item>
+        <item>Library Science</item>
+        <item>Maths &amp; Statistics</item>
+        <item>Microbiology</item>
+        <item>Physics</item>
+        <item>Science Education</item>
+    </string-array>
+    
+    
+    <string-array name="location_array">
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+        <item>FCT</item>
+     </string-array>
+    
+    <string name="title_activity_login">Login</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_otp">OTPActivity</string>
+    <string name="title_activity_register">Registration</string>
+    <string name="title_activity_profile">Profile Name</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_user_list">Users</string>
+    <string name="title_activity_post_feed">PostFeedActivity</string>
+    <string name="title_activity_confirmation">Confirmation</string>
+    <string name="title_activity_comment">Comments</string>
+    <string name="title_activity_hash">HashTags</string>
+    <string name="title_activity_repository">Repository</string>
+    <string name="title_activity_shopping">Shopping</string>
+    <string name="title_activity_digest">News</string>
+    <string name="title_activity_transit">Transit</string>
+    <string name="title_activity_grid">GridActivity</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_feed">Feed</string>
+    <string name="title_activity_display_shop"></string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_post_shopping">Post Ad</string>
+    <string name="title_activity_intro_discover">IntroDiscoverActivity</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_profile_pic">ProfilePicActivity</string>
+    <string name="title_activity_edit_account">Edit Account</string>
+    <string name="title_activity_search_contact">Search Contacts</string>
+    <string name="title_activity_report_user">Report User</string>
+    <string name="title_activity_notification_setting">Notification Settings</string>
+    <string name="title_activity_change_number">Change Number</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="title_activity_store">My store</string>
+    <string name="title_activity_edit_shop">Edit Ad</string>
+    <string name="title_activity_post_transit">Transit Schedule</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_taxi">TaxiActivity</string>
+    <string name="title_activity_store_setting">StoreSettingActivity</string>
+
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+
+
+</resources>

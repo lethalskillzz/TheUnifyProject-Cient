@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/feed_popup_edit"
+        app:showAsAction="never"
+        android:title="Edit"
+        android:visible="true"/>
+
+    <item android:id="@+id/feed_popup_delete"
+        app:showAsAction="never"
+        android:title="Delete"
+        android:visible="true"/>
+
+    <item android:id="@+id/feed_popup_cancel"
+        app:showAsAction="never"
+        android:title="Cancel"
+        android:visible="true"/>
+
+</menu>
+
+
+
+

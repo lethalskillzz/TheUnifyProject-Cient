@@ -1,0 +1,87 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/introDiscoverCoordinatorLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="net.theunifyproject.lethalskillzz.activity.IntroDiscoverActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/ash_background"
+    android:padding="8dp">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/intro_discover_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/intro_discover_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/feed_item_bg"
+            android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_centerVertical="true"
+                android:text="@string/msg_follow_5_users"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/intro_discover_progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:indeterminateTint="@color/colorAccent"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone" />
+
+
+
+            <TextView
+                android:id="@+id/intro_discover_follow_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:clickable="true"
+                android:text="Follow(0)"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_follow_green"
+                android:textSize="@dimen/feed_item_profile_name"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

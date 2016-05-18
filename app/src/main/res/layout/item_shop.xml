@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/shop_item_width"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="3dp"
+    android:layout_marginLeft="@dimen/feed_item_margin"
+    android:layout_marginRight="@dimen/feed_item_margin"
+    android:layout_marginTop="@dimen/feed_item_margin"
+    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+    card_view:cardElevation="2dp"
+    android:layout_marginBottom="0dp">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <net.theunifyproject.lethalskillzz.widget.FeedImageView
+            android:id="@+id/shop_img"
+            android:layout_width="fill_parent"
+            android:layout_height="185dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_image"/>
+
+        <TextView
+            android:id="@+id/shop_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="Test" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_naira"
+                android:layout_toLeftOf="@+id/shop_price"
+                android:layout_toStartOf="@+id/shop_price"/>
+
+
+            <TextView
+                android:id="@+id/shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#55b948"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="200" />
+
+
+            <ImageButton
+                android:id="@+id/shop_btnOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:background="@drawable/bg_click"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_more" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

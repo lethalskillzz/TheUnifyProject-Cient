@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+    android:paddingLeft="@dimen/feed_item_padding_left_right"
+    android:paddingRight="@dimen/feed_item_padding_left_right">
+
+
+    <TextView
+        android:id="@+id/list_popup_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/feed_item_profile_name"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/list_popup_subTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:textColor="@color/timestamp"
+        android:textSize="@dimen/feed_item_timestamp" />
+
+</LinearLayout>

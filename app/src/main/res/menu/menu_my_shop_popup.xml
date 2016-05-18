@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/shop_popup_edit"
+        app:showAsAction="never"
+        android:title="Edit"
+        android:visible="true"/>
+
+    <item android:id="@+id/shop_popup_delete"
+        app:showAsAction="never"
+        android:title="Delete"
+        android:visible="true"/>
+
+</menu>
+
+
+
+

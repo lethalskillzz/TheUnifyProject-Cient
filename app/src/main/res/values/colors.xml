@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7B1FA2</color>
+    <color name="colorPrimaryDark">#4A148C</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#CE93D8</color>
+
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="lbl_name">#333333</color>
+
+    <color name="btn_follow_normal">#02c754</color>
+    <color name="btn_follow_pressed">#006633</color>
+
+    <color name="btn_unfollow_normal">#536DFE</color>
+    <color name="btn_unfollow_pressed">#304FFE</color>
+
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="timestamp">#a0a3a7</color>
+
+    <color name="likes">#293D6C</color>
+
+    <color name="light_ash_background">#E2E2E2</color>
+    <color name="ash_background">#D6D6D6</color>
+    <color name="black_alpha_12">#1F000000</color>
+    <color name="black_alpha_30">#4D000000</color>
+    <color name="black_alpha_60">#7D000000</color>
+    <color name="black_alpha_unknown">#D8000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>
