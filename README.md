@@ -10,7 +10,7 @@
  * News section.<br><br>
 
 Screen grabs from the app.<br>
-<div align="center">
+<div align="justify">
 
  <img src="/screen grabs/device-2016-02-24-151209.png">
  <img src="/screen grabs/device-2016-02-21-192659.png">
