@@ -11,6 +11,7 @@
 
 Screen grabs from the app.<br>
 
+<div display:block; float:left; margin-right: 5px;>
 
  <img src="/screen grabs/device-2016-02-24-151209.png">
  <img src="/screen grabs/device-2016-02-21-192659.png">
@@ -24,4 +25,4 @@ Screen grabs from the app.<br>
  <img src="/screen grabs/device-2016-02-12-110157.png">
  <img src="/screen grabs/device-2016-02-12-110122.png">
 
- 
+ </div>
