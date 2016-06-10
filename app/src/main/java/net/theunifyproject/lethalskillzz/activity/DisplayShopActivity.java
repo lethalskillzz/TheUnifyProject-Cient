@@ -1,12 +1,15 @@
 package net.theunifyproject.lethalskillzz.activity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -46,7 +49,7 @@ import net.theunifyproject.lethalskillzz.util.Logout;
 import net.theunifyproject.lethalskillzz.util.StripUnderline;
 import net.theunifyproject.lethalskillzz.widget.FeedImageView;
 
-public class DisplayShopActivity extends AppCompatActivity  implements View.OnClickListener {
+public class DisplayShopActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = DisplayShopActivity.class.getSimpleName();
     public static Handler mUiHandler;
@@ -109,13 +112,24 @@ public class DisplayShopActivity extends AppCompatActivity  implements View.OnCl
 
     @Override
     public void onClick(View view) {
-        if(isReady) {
+        if (isReady) {
             switch (view.getId()) {
                 case R.id.display_shop_fab: {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
                     callIntent.setPackage("com.android.server.telecom");
                     callIntent.setData(Uri.parse("tel:" + mobile));
-                    startActivity(callIntent );
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        // TODO: Consider calling
+                        //    ActivityCompat#requestPermissions
+                        // here to request the missing permissions, and then overriding
+                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                        //                                          int[] grantResults)
+                        // to handle the case where the user grants the permission. See the documentation
+                        // for ActivityCompat#requestPermissions for more details.
+                        startActivity(callIntent);
+
+                        return;
+                    }
                 }
                 break;
             }
