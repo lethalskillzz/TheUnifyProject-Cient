@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.0"
+    buildToolsVersion "23.0.1"
 
     //useLibrary 'org.apache.http.legacy'
 
@@ -29,12 +29,12 @@ dependencies {
     compile project(':volley')
     compile project(':fab-transformation')
     compile project(':codeinputlib')
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:design:23.0.1'
-    compile 'com.android.support:recyclerview-v7:23.0.1'
-    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
     compile 'com.google.android.gms:play-services:8.3.0'
-    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:support-v4:23.3.0'
     compile 'com.rockerhieu.emojicon:library:1.3.1'
     compile 'com.edmodo:cropper:1.0.1'
     compile files('libs/fortumo-in-app-android-sdk.jar')
