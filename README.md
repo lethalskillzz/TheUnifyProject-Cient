@@ -8,9 +8,9 @@
  * E-Market.<br>
  * Transport analytics.<br>
  * News section.<br><br>
-Serverside code  https://github.com/lethalskillzz/TheUnifyProject-Server
-Screen grabs from the app.<br>
 
+Serverside code  https://github.com/lethalskillzz/TheUnifyProject-Server<br><br>
+Screen grabs from the app.<br><br>
 
  <img src="/screen grabs/device-2016-02-24-151209.png">
  <img src="/screen grabs/device-2016-02-21-192659.png">
