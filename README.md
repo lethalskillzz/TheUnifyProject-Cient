@@ -3,7 +3,7 @@
  
  The platform mimics features from Instagram, Facebook and Twitter all together.<br> 
  
- ### The utility features included are:<br>
+### The utility features included are:<br>
  * E-Book repository.<br>
  * E-Market.<br>
  * Transport analytics.<br>
