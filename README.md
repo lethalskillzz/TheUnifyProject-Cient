@@ -3,15 +3,16 @@
  
  The platform mimics features from Instagram, Facebook and Twitter all together.<br> 
  
-### The utility features included are:<br>
+### Utility features included are:<br>
  * E-Book repository.<br>
  * E-Market.<br>
  * Transport analytics.<br>
  * News section.<br><br>
 
-Serverside code  https://github.com/lethalskillzz/TheUnifyProject-Server<br><br>
+## Back-End
+ https://github.com/lethalskillzz/TheUnifyProject-Server<br><br>
 
-### Screenshots from the app.<br><br>  
+## Screenshots from the app.<br><br>  
 
  <img src="/screen grabs/device-2016-02-24-151209.png"><br><br>
  <img src="/screen grabs/device-2016-02-21-192659.png"><br><br>
