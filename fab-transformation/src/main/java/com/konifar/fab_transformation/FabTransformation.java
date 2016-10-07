@@ -8,7 +8,7 @@ import com.konifar.fab_transformation.animation.FabAnimatorLollipop;
 import com.konifar.fab_transformation.animation.FabAnimatorPreL;
 
 public class FabTransformation {
-
+   
     private static final boolean IS_PRE_LOLLIPOP = Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP;
     private static final long DEFAULT_DURATION = 300;
 
