@@ -11,7 +11,7 @@ import android.text.TextUtils;
 import net.android.volley.Request;
 import net.android.volley.RequestQueue;
 import net.android.volley.toolbox.ImageLoader;
-import net.android.volley.toolbox.Volley;
+import net.android.volley.toolbox.Volley;   
 import net.theunifyproject.lethalskillzz.util.LruBitmapCache;
 
 public class AppController extends Application {
