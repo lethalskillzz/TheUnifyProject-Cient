@@ -46,7 +46,7 @@ public class AboutActivity extends Activity {
      */
     private SystemUiHider mSystemUiHider;
 
-    @Override
+    @Override   
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
