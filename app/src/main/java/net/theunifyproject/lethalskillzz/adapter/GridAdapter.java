@@ -26,7 +26,7 @@ public class GridAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<GridItem> gridItems;
     private Context context;
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
-
+    
     private final int VIEW_ITEM_STORE = 4;
     private final int VIEW_ITEM_SHOP = 3;
     private final int VIEW_ITEM_DIGEST = 2;
