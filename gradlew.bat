@@ -66,7 +66,7 @@ goto execute
 @rem Get arguments from the 4NT Shell from JP Software
 set CMD_LINE_ARGS=%$
 
-:execute
+:execute   
 @rem Setup the command line
 
 set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
