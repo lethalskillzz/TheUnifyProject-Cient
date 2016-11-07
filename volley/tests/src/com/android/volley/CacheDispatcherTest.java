@@ -100,7 +100,7 @@ public class CacheDispatcherTest extends TestCase {
         mCacheQueue.add(mRequest);
         mCacheQueue.waitUntilEmpty(TIMEOUT_MILLIS);
         assertTrue(mDelivery.postResponse_called);
-        assertFalse(mDelivery.postError_called);
+        assertFalse(mDelivery.postError_called);  
         assertTrue(mNetworkQueue.size() > 0);
         Request request = mNetworkQueue.take();
         assertSame(entry, request.getCacheEntry());
