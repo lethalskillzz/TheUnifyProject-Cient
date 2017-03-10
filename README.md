@@ -15,15 +15,15 @@
 ## Screenshots from the app.<br><br>      
 
 <p align="center">
- <img src="/screen grabs/device-2016-02-24-151209.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-21-192659.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-20-202043.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-12-110550.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-21-213741.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-24-150654.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-21-193225.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-12-110247.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-21-215718.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-12-110157.png" width="30%"><br><br>
- <img src="/screen grabs/device-2016-02-12-110122.png" width="30%"><br><br>
+ <img src="/screen grabs/device-2016-02-24-151209.png" width="30%">
+ <img src="/screen grabs/device-2016-02-21-192659.png" width="30%">
+ <img src="/screen grabs/device-2016-02-20-202043.png" width="30%">
+ <img src="/screen grabs/device-2016-02-12-110550.png" width="30%">
+ <img src="/screen grabs/device-2016-02-21-213741.png" width="30%">
+ <img src="/screen grabs/device-2016-02-24-150654.png" width="30%">
+ <img src="/screen grabs/device-2016-02-21-193225.png" width="30%">
+ <img src="/screen grabs/device-2016-02-12-110247.png" width="30%">
+ <img src="/screen grabs/device-2016-02-21-215718.png" width="30%">
+ <img src="/screen grabs/device-2016-02-12-110157.png" width="30%">
+ <img src="/screen grabs/device-2016-02-12-110122.png" width="30%">
  </p>
