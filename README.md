@@ -14,6 +14,7 @@
   
 ## Screenshots from the app.<br><br>      
 
+<p align="center">
  <img src="/screen grabs/device-2016-02-24-151209.png"><br><br>
  <img src="/screen grabs/device-2016-02-21-192659.png"><br><br>
  <img src="/screen grabs/device-2016-02-20-202043.png"><br><br>
@@ -25,5 +26,4 @@
  <img src="/screen grabs/device-2016-02-21-215718.png"><br><br>
  <img src="/screen grabs/device-2016-02-12-110157.png"><br><br>
  <img src="/screen grabs/device-2016-02-12-110122.png"><br><br>
-
- 
+ </p>
